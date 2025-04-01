@@ -1,0 +1,52 @@
+app.py
+
+from flask import*
+from pickle import*
+
+f=open("BCP.pkl","rb")
+model=load(f)
+f.close()
+
+app=Flask(__name__)
+
+@app.route("/",methods=["GET","POST"])
+def home():
+	if request.method=="POST":
+		try:
+			#Collect user input from the form
+			inputs=[
+				float(request.form[feature]) for feature in
+				["diagnosis", "Radius_mean", "Texture_mean", "perimeter_mean", "area_mean", "smoothness_mean", "compactness_mean", "concavity_mean", "concave points_mean", "symmetry_mean", "fractal_dimension_mean", "radius_se", "texture_se", "perimeter_se", "area_se", "smoothness_se", "compactness_se", "concavity_se", "concave points_se", "symmetry_se", "fractal_dimension_se", "radius_worst", "texture_worst", "perimeter_worst", "area_worst", "smoothness_worst", "compactness_worst", "concavity_worst", "concave points_worst", "symmetry_worst", "fractal_dimension_worst"]
+
+			]
+
+			#predict using teh mode
+			prediction = model.predict([inputs])
+			msg=f"the breast cancer prediction is: {prediction[0]}"
+
+		except ValueError as e:
+			msg=f"Error:Please make sure all fields are filled correctly"
+		except Exception as e:
+			msg=f"Error: {str(e)}"
+		
+		#render the template with prediction message
+		return render_template("home.html",msg=msg)
+	else:
+		return render_template("home.html",msg="")
+
+if __name__=="__main__":
+	app.run(debug=True,use_reloader=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prevention & Self-Care</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .text-content {
+            max-width: 600px;
+            padding: 20px;
+            text-align: left;
+        }
+        .image-content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+	.large-image {
+            width: 80%;
+            height: 50%;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #fce4ec;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        h2 {
+            color: #e91e63;
+        }
+        .cta-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #ff1994;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>💗 Breast Cancer Prevention & Self-Care 💗</h1>
+</header>
+
+<section class="info">
+    <div class="text-content">
+        <h2>💡 <b>How to Prevent Breast Cancer?</b></h2>
+        <p>Breast cancer prevention starts with a <b>healthy lifestyle</b>. Follow these steps to reduce your risk:</p>
+        <ul>
+            <li>🎗️ <b>Maintain a healthy weight</b> and avoid obesity.</li>
+            <li>🎗️ <b>Exercise regularly</b> for at least <b>30 minutes</b> a day.</li>
+            <li>🎗️ Eat a <b>balanced diet</b> rich in <b>fruits, vegetables, and lean proteins</b>.</li>
+            <li>🎗️ <b>Limit alcohol intake</b> to lower risk factors.</li>
+            <li>🎗️ <b>Quit smoking</b> to prevent cell damage.</li>
+            <li>🎗️ <b>Get regular check-ups & screenings</b> for early detection.</li>
+        </ul>
+
+        <h2>💖 <b>Self-Care Tips for Women</b></h2>
+        <p>Taking care of your <b>mind & body</b> is equally important. Here are some self-care habits:</p>
+        <ul>
+            <li>🌸 Perform <b>monthly breast self-exams</b> for early detection.</li>
+            <li>🌸 Reduce <b>stress</b> with yoga, meditation, or engaging hobbies.</li>
+            <li>🌸 Stay <b>hydrated</b> and maintain a nutritious diet.</li>
+            <li>🌸 <b>Get enough sleep</b> to strengthen immunity.</li>
+            <li>🌸 Join <b>support groups</b> for awareness and encouragement.</li>
+        </ul>
+    </div>
+    <div class="image-content">
+        <img src="{{ url_for('static', filename='images/bra.jpg') }}" alt="Breast Cancer Self-Care">
+    </div>
+</section>
+
+<div class="large-image-container">
+    <img src="{{ url_for('static', filename='images/card1.jpg') }}" class="large-image" alt="Breast Cancer Awareness Banner">
+</div>
+
+
+<div class="cta-container">
+    <a href="{{ url_for('home') }}" class="btn" style="margin-bottom:30px">🏠 <b>Back to Home</b></a>
+</div>
+
+<footer>
+    <p>&copy; 2025 <b>Breast Cancer Awareness</b> | Stay aware, stay healthy! 💕</p>
+</footer>
+
+</body>
+</html>

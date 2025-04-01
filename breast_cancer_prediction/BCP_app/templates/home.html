@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Awareness & Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Breast Cancer Awareness & Early Detection</h1>
+    <img src="{{ url_for('static', filename='images/women.jpg') }}" class="wave-img" alt="Wave Border Image">
+</header>
+
+<section class="info">
+    <div class="text-content">
+        <h2>What is Breast Cancer?</h2>
+        <p>Breast cancer is a disease in which cells in the breast grow out of control. It is one of the most common cancers worldwide.</p>
+        
+        <h2>Prevention Tips</h2>
+        <ul>
+            <li> 🎀Maintain a healthy weight</li>
+            <li> 🎀Exercise regularly</li>
+            <li> 🎀Eat a balanced diet</li>
+            <li> 🎀Limit alcohol consumption</li>
+            <li> 🎀Avoid smoking</li>
+            <li> 🎀Get regular screenings</li>
+        </ul>
+	<a href="{{ url_for('bra') }}" class="btn" style="margin-bottom:30px">Read More</a>
+    </div>
+    <div class="image-content">
+        <img src="{{ url_for('static', filename='images/landing.jpg') }}" alt="Breast Cancer Prevention Tips">
+    </div>
+</section>
+
+<div class="cta-container">
+
+    <p style="padding:10px">Early detection saves lives. Take action now!</p>
+    	<a href="{{ url_for('predict_page') }}" class="btn" style="margin:20px">Go to Prediction</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Breast Cancer Awareness | Stay aware, stay healthy!</p>
+</footer>
+
+</body>
+</html>
