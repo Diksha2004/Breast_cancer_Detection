@@ -4,7 +4,7 @@ Machine learning (ML) techniques can help identify breast cancer early
 Project Overview
 The Breast Cancer Prediction System is a machine learning-based web application that predicts whether a breast tumor is Malignant (Cancerous) or Benign (Non-Cancerous). The system uses Flask for the web framework
 
-Technologies Used
+Technologies Used :<br>
 Frontend: HTML, CSS
 Backend: Python (Flask)
 Machine Learning Model: Trained using Scikit-learn
