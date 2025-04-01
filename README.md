@@ -12,7 +12,10 @@ Database: N/A (No database is used as the model loads pre-trained data)
 --------------------------------------------------------------------------------------
 
 How It Works
-*The user inputs breast cancer-related features (e.g., radius mean, texture mean, etc.).
-*The system preprocesses the data using the scaler (scaler.pkl).
-*The machine learning model (BCP.pkl) predicts whether the tumor is Malignant (M) or Benign (B).
-*The result is displayed on a separate results page.
+->The user inputs breast cancer-related features (e.g., radius mean, texture mean, etc.).
+->The system preprocesses the data using the scaler (scaler.pkl).
+->The machine learning model (BCP.pkl) predicts whether the tumor is Malignant (M) or Benign (B).
+->The result is displayed on a separate results page.
+
+Preview:
+![Alt Text](images/bcp.jpg)
