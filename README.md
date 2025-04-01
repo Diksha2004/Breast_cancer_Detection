@@ -18,4 +18,4 @@ How It Works
 ->The result is displayed on a separate results page.
 
 Preview:
-![Alt Text](images/bcp.jpg)
+![Image Description](asset/1.png)
