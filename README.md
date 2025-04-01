@@ -19,3 +19,8 @@ How It Works
 
 Preview:
 ![Image Description](asset/1.png)
+![Image Description](asset/2.png)
+![Image Description](asset/3.png)
+![Image Description](asset/4.png)
+![Image Description](asset/5.png)
+![Image Description](asset/6.png)
